@@ -1,0 +1,146 @@
+{
+    "name":"Shreya Jain",
+    "role":"Backend Developer",
+    "connections":" 306 connections",
+    "company":"prodsmiths",
+    "location": "Himachal Pradesh, India",
+    "profile_languages":"english",
+    "public_profile_and_URL":"https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile",
+    "analytics":[
+        {
+            "type":"Profile Views",
+            "count":"169",
+            "description":"Discover who's viewed your profile."
+        },
+        {
+            "type":"Post Impressions",
+            "count":"1278",
+            "description":"Check out who's engaging with your posts."
+        },
+        {
+            "type":"Search appearances",
+            "count":"37",
+            "description":"See how often you appear in search results."
+        }
+    ],
+    "resources":[
+        {
+            "name":"Creator Mode",
+            "action":"Off",
+            "Discription":"Get discovered, showcase content on your profile, and get access to creator tools"
+           
+        },
+        {
+            "name":"My Network",
+            "action":"",
+            "Discription":"See and manage your connections and interests."
+           
+        }
+    ],
+    "about":"Organized and dependable candidate successful at managing multiple priorities with a positive attitude. Willingness to take on added responsibilities to meet team goals. To seek and maintain a full-time position that offers professional challenges utilizing interpersonal skills, excellent time management, and problem-solving skills.",
+    "activity":[{
+        "followers":314
+    }
+    ],
+    "experience":[
+        {
+            "role":"Back End Developer",
+            "company":"PRODSMITHS",
+            "type":"Internship",
+            "period_of_joining":"Sep 2023 - Present. 1 Month",
+            "location":"India"
+        }
+    ],
+    "education":[
+        {
+            "university": "Chitkara University",
+            "degree_name": "Master of Computer Applications-MCA",
+            "time_period": "Aug 2021- Jul 2023"
+        },
+        {
+            "university": "Chitkara University",
+            "degree_name": "Bachelor's of Computer Applications",
+            "time_period": "Aug 2018- Jul 2021"
+        }
+    ],
+    "licenses_and_certifications":[
+        {
+            "name":"Digital Marketing",
+            "issuing_organization":"Indian School of Digital Marketing Management and Technology",
+            "issueDate":"April 2022"
+        },
+        {
+            "name":"Introduction to c++",
+            "issuing_organization":"Coding Ninjas",
+            "issueDate":"July 2021"
+        }
+    ],
+    "skils":[
+        "sql",
+        "python"
+    ],
+    "languages":[
+        {
+            "name":"English",
+            "type":"Professional working proficiency"
+        },
+        {
+            "name":"Hindi",
+            "type":"Native or bilingual proficiency"
+        }
+    ],
+    "people_also_viewed":[
+        {
+            "name": "Monal Lakhanpal",
+            "tagline": "Student at Chitkara University | #developer #MCA #BCA",
+            "action": "Message"
+        },
+        {
+            "name": "Riya Soni",
+            "tagline": "Student at Chitkara University",
+            "action": "Message"
+        },
+        {
+            "name": "vivek chugh",
+            "tagline": "Master of Computer Applications - MCA at Chitkara",
+            "action": "Message"
+        },
+        {
+            "name": "Ritesh Sood",
+            "tagline": "Chitkara University|| MCA||Python||Django||DRF",
+            "action": "Message"
+        },
+        {
+            "name": "Anshul Malhotra",
+            "tagline": "Data Analyst-RNA at WNS Global services",
+            "action": "Message"
+
+        }
+    ],
+    "people_you_may_know": [
+        {
+          "name": "Parish Singla",
+          "tagline": "Graphic designer | Ui Ux designer | Video EditorGraphic designer | Ui Ux designer | Video Editor",
+          "action": "Connect"
+        },
+        {
+          "name": "Taniya Bhushan",
+          "tagline": "Trainer | Course Developer",
+          "action": "Connect"
+        }
+      ],
+      "You_Might_Like":[
+        {
+            "name":"NVIDIA",
+            "company_type":"Computer Hardware Manufacturing",
+            "followers_count":"1649888",
+            "action":"Follow"
+        },
+        {
+            "name":"GitHub",
+            "company_type":"Software Development",
+            "followers_count":"3554466",
+            "action":"Follow"
+        }
+      ]
+}
