@@ -1,0 +1,27 @@
+{% if latest_question_list %}
+<ul>
+  {% for question in latest_question_list %}
+  <li>
+    <a href="{% url 'polls:details' question.id %}"
+      >{{ question.question_text }}</a
+    >
+  </li>
+
+  {% endfor %}
+</ul>
+{% else %}
+<p>No polls are available.</p>
+{% endif %} {% load static %}
+
+<link rel="stylesheet" href="{% static 'polls/style.css' %}" />
+{% load static %} {% if latest_users_list %}
+<ul>
+  {% for user_info in latest_users_list %}
+  <li>
+    <a href="{% url 'polls:user_info' user_info.id %}">{{ user_info.name }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No Users are available.</p>
+{% endif %}

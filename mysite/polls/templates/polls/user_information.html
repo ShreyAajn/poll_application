@@ -1,0 +1,81 @@
+<h1>User Information</h1>
+<h2>User ID:{{ user_info.id }}</h2>
+<h2>Name:{{ user_info.name }}</h2>
+<h2>Role:{{ user_info.role }}</h2>
+<h2>Connections:{{ user_info.connections }}</h2>
+<h2>Location:{{user_info.location}}</h2>
+<h2>Profile_Language:{{ user_info.profile_languages }}</h2>
+<h2>Public Profile And URL:{{user_info.public_profile_and_url}}</h2>
+<h2>About:{{user_info.about}}</h2>
+
+<h2>Analytics</h2>
+{% for analytics in user_info.analytics_set.all %}
+<h3><p>Type: {{ analytics.type }}</p></h3>
+<p>Count: {{ analytics.count }}</p>
+<p>Description: {{ analytics.description }}</p>
+
+{% endfor %}
+
+<h2>Resources</h2>
+<ul>
+  {% for resources in user_info.resources_set.all %}
+  <li>{{ resources.name }}</li>
+  <li>{{ resources.action }}</li>
+  <li>{{resources.description}}</li>
+  {% endfor %}
+</ul>
+
+<h2>Education</h2>
+<ul>
+  {% for resource in user_info.education_set.all %}
+  <li>{{ resource.university }}</li>
+  <li>{{ resource.degree_name }}</li>
+  <li>{{ resource.time_period }}</li>
+  {% endfor %}
+</ul>
+<h2>Experience</h2>
+<ul>
+  {% for resource in user_info.experience_set.all %}
+  <li>{{ resource.role }}</li>
+  <li>{{ resource.company }}</li>
+  <li>{{ resource.type }}</li>
+  <li>{{ resource.period_of_training }}</li>
+  <li>{{ resource.location }}</li>
+
+  {% endfor %}
+</ul>
+<h2>License and Certifications</h2>
+{% for resource in user_info.licenses_and_certifications_set.all %}
+<ul>
+  <li>{{ resource.name }}</li>
+  <li>Issuing Organization: {{ resource.issuing_organization }}</li>
+  <li>Issue Date: {{ resource.issuedate }}</li>
+</ul>
+{% endfor %}
+
+<h2>Skills</h2>
+<ul>
+  {% for resource in user_info.skills_set.all %}
+  <li>{{ resource.skillset }}</li>
+  {% endfor %}
+</ul>
+
+<h2>People you may know</h2>
+<ul>
+  {% for resource in user_info.people_you_may_know_set.all %}
+  <li>{{ resource.name }}</li>
+  <li>{{ resource.tagline }}</li>
+  <li>{{ resource.action }}</li>
+  {% endfor %}
+</ul>
+
+<h2>You Might Like</h2>
+<ul>
+  {% for resource in user_info.you_might_like_set.all %}
+  <li>{{ resource.name }}</li>
+  <li>{{ resource.company_type }}</li>
+  <li>{{ resource.followers_count }}</li>
+  <li>{{ resource.action }}</li>
+
+  {% endfor %}
+</ul>
