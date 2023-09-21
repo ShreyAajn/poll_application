@@ -2,11 +2,12 @@ from typing import Any
 from django.db import models
 from django.utils import timezone
 from django.http import *
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.views import generic
 from django.template import loader
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
+from .forms import UserCreationForm
 from .models import Question, Choice, user_info
 
 
@@ -56,15 +57,37 @@ def index(request):
     return HttpResponse(template.render(context, request))
 
 
+# class IndexView(generic.ListView):
+#     template_name = "polls/index.html"
+#     context_object_name = "latest_question_list"
+
+#     def get_queryset(self):
+#         """Return the last five published questions."""
+#         return Question.objects.order_by("-pub_date")[:5]
+
+
 class IndexView(generic.ListView):
     template_name = "polls/index.html"
-    context_object_name = "latest_question_list"
+    context_object_name = "latest_user_info_list"
 
     def get_queryset(self):
-        """Return the last five published questions."""
-        return Question.objects.order_by("-pub_date")[:5]
+        return user_info.objects.all()
 
 
 class UserInformationView(generic.DetailView):
     model = user_info
     template_name = "polls/user_information.html"
+
+
+def create_user(request):
+    if request.method == "POST":
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()  # Save the user data to the database
+            return redirect(
+                "polls:index"
+            )  # Redirect to the index page after user creation
+    else:
+        form = UserCreationForm()
+
+    return render(request, "polls/create_user.html", {"form": form})
