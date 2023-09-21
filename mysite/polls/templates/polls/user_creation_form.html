@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Create User</title>
+  </head>
+  <body>
+    <h1>Create New User</h1>
+    <form method="post" action="{% url 'polls/create_user'  %}">
+      {% csrf_token %}
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required /><br />
+
+      <label for="role">Role:</label>
+      <input type="text" name="role" id="role" required /><br />
+
+      <label for="connections">Your connections:</label>
+      <input type="number" name="connections" id="connections" required /><br />
+
+      <label for="location">Location:</label>
+      <input type="text" name="location" id="location" required /><br />
+
+      <label for="profile_language">Profile Language:</label>
+      <input
+        type="text"
+        name="profile_language"
+        id="profile_language"
+        required
+      /><br />
+
+      <label for="public_profile_url">Public Profile URL:</label>
+      <input
+        type="text"
+        name="public_profile_url"
+        id="public_profile_url"
+        required
+      /><br />
+
+      <input type="submit" value="Create User" />
+    </form>
+  </body>
+</html>
